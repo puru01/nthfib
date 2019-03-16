@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nth Fibonacci Number</title>
+</head>
+<body>
+    <section class="fibui">
+        <div class="container">
+            <form action="" method="GET">
+                <input type="search" placeholder="Enter the number" name="number">
+                <button>Go</button>
+            </form>
+            <div>
+                <p>{{number}}th Fibonacci number is {{nthFib}}</p>
+                <br/>
+                <p>Time Taken : {{timeTaken}} seconds</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

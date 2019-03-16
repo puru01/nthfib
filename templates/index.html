@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nth Fibonacci Number</title>
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+</head>
+<body class="centered">        
+            <center>
+            <form action="" method="GET">
+            <p>
+            <input type="search" placeholder="Enter the number" name="number"></p>
+            <button type="submit" >Go</button>
+            </form>
+        
+                <p>Fibonacci number {{number}} is {{nthFib}}</p>
+                <br/>
+                <p>Time Taken : {{timeTaken}} seconds</p>
+            </div>
+        </div>
+</center>
+</body>
+</html>
